@@ -1,0 +1,24 @@
+.LOG
+8:57 PM 18/06/2022
+Beautiful Soup 4 Tutorial #1 - Web Scraping With Python: https://www.youtube.com/watch?v=gRLHr664tXA
+Web Scraping With Python 101: https://www.youtube.com/watch?v=CHUxmVVH2AQ
+Automate Browser using Python | selenium automation: https://www.youtube.com/watch?v=3DwGOyjGff4
+9:23 PM 18/06/2022
+1) Automate Browser using Python | selenium automation: https://www.youtube.com/watch?v=3DwGOyjGff4
+	How to type into address redfin and click search
+
+3) Beautiful Soup 4 Tutorial #1 - Web Scraping With Python: https://www.youtube.com/watch?v=gRLHr664tXA
+	How to get the lotsize from the URL script
+4) Web Scraping With Python 101: https://www.youtube.com/watch?v=CHUxmVVH2AQ
+	Extras and how to install dependencies
+5) Check Tutorial #2: https://youtube.com/playlist?list=PLzMcBGfZo4-lSq2IDrA6vpZEV92AmQfJK
+	RegEx
+
+*Find element by XPATH //*[@id="basicInfo"]/div[2]/div[1], then use regex to find lotsize?
+
+<div class="table-row"><span class="table-label">Lot Size</span><div class="table-value">1.88 Acres</div></div>
+//*[@id="basicInfo"]/div[2]/div[1]/div[5]
+//*[@id="basicInfo"]/div[2]/div[1]/div[8]
+//*[@id="basicInfo"]/div[2]/div[1]
+//*[@id="content"]/div[11]/div[2]/div[9]/section/div/div[2]/div[4]    
+//*[@id="content"]/div[11]/div[2]/div[9]/section/div/div[2]/div[8]
