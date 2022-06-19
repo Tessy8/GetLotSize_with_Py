@@ -22,3 +22,5 @@ Automate Browser using Python | selenium automation: https://www.youtube.com/wat
 //*[@id="basicInfo"]/div[2]/div[1]
 //*[@id="content"]/div[11]/div[2]/div[9]/section/div/div[2]/div[4]    
 //*[@id="content"]/div[11]/div[2]/div[9]/section/div/div[2]/div[8]
+5:22 PM 19/06/2022
+//*[@id="basicInfo"]/div[2]/div[1]/div[8]
