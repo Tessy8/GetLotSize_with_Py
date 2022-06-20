@@ -5,16 +5,14 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
+import sys
 import re
 import math
-import timeit
 
-# start timer
-start = timeit.default_timer()
 
 chrome_path = "chromedriver"  # link the path to chrome driver
 
-address = "3145 Newton St NE, Washington, DC 20018"  # the address
+address = sys.argv[1]  # the address
 url = "https://www.redfin.com/"  # Redfin URL
 
 lot_size = ""  # Lot size variable
@@ -109,10 +107,4 @@ else:
 
 # Prints the output
 print(Footprint)
-
-# stop timer
-stop = timeit.default_timer()
-# calculate execution time of the program
-execution_time = stop - start
-# print the execution time
-print("Program Executed in "+str(execution_time))
+sys.stdout.flush()

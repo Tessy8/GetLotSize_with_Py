@@ -1,0 +1,18 @@
+3456 Halcyon Rd, Stevenson, MD 21153
+3145 Newton St NE, Washington, DC 20018  -> norm
+3457 W Haley Dr, Eagle, ID 83616 -> max
+670 Eastwood Ave, Chico, CA 95928
+6818 Ashleys Crossing Ct, Temple Hills, MD 20748
+8837 Latrec Ave Apt 5302 Orlando FL 32819
+
+
+4308 DANA ST
+
+
+6818 Ashleys Crossing court  , Temple Hills  , MD 20748
+
+
+1714 Memphis St Unit COM, Philadelphia, PA 19125 -> empty lotsize
+
+
+210 EAST 86th St,New York, NY 10119
