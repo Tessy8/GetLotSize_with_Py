@@ -7,10 +7,6 @@ from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import re
 import math
-import timeit
-
-# start timer
-start = timeit.default_timer()
 
 chrome_path = "chromedriver"  # link the path to chrome driver
 
@@ -101,7 +97,7 @@ if len(lot_size) > 0:
 
 # If there is no error and a lot size was not found, then output "Maximum footprint could not be found."
 elif len(ErrorMessage) == 0:
-    Footprint = "Maximum footprint could not be found."
+    Footprint = "Footprint could not be found."
 
 # Output "Error" if there was an error
 else:
@@ -109,10 +105,3 @@ else:
 
 # Prints the output
 print(Footprint)
-
-# stop timer
-stop = timeit.default_timer()
-# calculate execution time of the program
-execution_time = stop - start
-# print the execution time
-print("Program Executed in "+str(execution_time))
