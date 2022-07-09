@@ -17,3 +17,5 @@ Automate Browser using Python | selenium automation: https://www.youtube.com/wat
 
 10:40 PM 20/06/2022
 https://javascript.plainenglish.io/how-to-run-python-script-using-node-js-6b351169e916
+7:42 AM 09/07/2022
+with webdriver.Chrome(service=s, options=op) as d: error when running from server nodeJS

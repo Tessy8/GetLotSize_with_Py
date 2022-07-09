@@ -2,6 +2,7 @@
 from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
@@ -30,9 +31,11 @@ op.add_argument("--start-maximized")  # open Browser in maximized mode
 op.add_argument("--disable-dev-shm-usage")  # overcome limited resource problems
 op.add_experimental_option("excludeSwitches", ["enable-automation"])
 op.add_experimental_option('useAutomationExtension', False)
+op.add_argument("--headless")
 op.headless = True  # change to true to hide the browser
 
 s = Service(chrome_path)  # stores the chrome path
+
 
 with webdriver.Chrome(service=s, options=op) as d:
     try:
