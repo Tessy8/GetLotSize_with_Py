@@ -60,12 +60,16 @@ with webdriver.Chrome(service=s, options=op) as d:
                 print("There was a problem while finding the lot size.")
                 ErrorMessage = "Error"
             else:
-                # Format the result
-                lot_size_table = (BeautifulSoup(result.text, "html.parser")).prettify()
-                # print(lot_size_table)
-                lot_size_row = re.findall(pattern, lot_size_table)
-                lot_size = lot_size_row[0].split("\n")[1].strip().replace(",", "")
-                # print(lot_size)
+                try:
+                    # Format the result
+                    lot_size_table = (BeautifulSoup(result.text, "html.parser")).prettify()
+                    # print(lot_size_table)
+                    lot_size_row = re.findall(pattern, lot_size_table)
+                    lot_size = lot_size_row[0].split("\n")[1].strip().replace(",", "")
+                    # print(lot_size)
+                except:
+                    print("There was a problem while extracting the lot size.")
+                    ErrorMessage = "Error"
 
 # If the lot size is in acres, convert to Sq. Ft. and format
 if "Acres" in lot_size:

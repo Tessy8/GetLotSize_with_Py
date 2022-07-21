@@ -19,3 +19,6 @@ Automate Browser using Python | selenium automation: https://www.youtube.com/wat
 https://javascript.plainenglish.io/how-to-run-python-script-using-node-js-6b351169e916
 7:42 AM 09/07/2022
 with webdriver.Chrome(service=s, options=op) as d: error when running from server nodeJS
+3:04 PM 11/07/2022
+https://www.slimjet.com/chrome/download-chrome.php?file=files%2F80.0.3987.149%2Fgoogle-chrome-stable_current_amd64.deb
+103.0.5060.53
