@@ -57,6 +57,7 @@ with webdriver.Chrome(service=s, options=op) as d:
             try:
                 # Find the table containing lot size
                 result = d.find_element(by=By.XPATH, value='//*[@id="basicInfo"]/div[2]/div[1]')
+
             except:
                 print("There was a problem while finding the lot size.")
                 ErrorMessage = "Error"
@@ -64,7 +65,7 @@ with webdriver.Chrome(service=s, options=op) as d:
                 try:
                     # Format the result
                     lot_size_table = (BeautifulSoup(result.text, "html.parser")).prettify()
-                    # print(lot_size_table)
+                    print(lot_size_table)
                     lot_size_row = re.findall(pattern, lot_size_table)
                     lot_size = lot_size_row[0].split("\n")[1].strip().replace(",", "")
                     # print(lot_size)
